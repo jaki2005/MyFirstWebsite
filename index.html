@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="img/logojak2.png" type="image/png">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Haikal Dzaky</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        
+    </head>
+
+    </head>
+    <body>
+
+        
+    <section class="header">
+        <header>
+            <nav>
+                <a href="index.html"><img src="img/jekiklogoos.png" alt="jeki"  class="stbawite"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li class="project"><a href="#project"><h1>Projects</h1></a></li>
+                    <li class="extras"><a href="#extras"><h1>Extras</h1></a></li>
+                    <li class="lets"><a href="#contact-form" onclick="showContactForm()"><h1>Let's talk!</h1></a></li>
+                </ul>
+            </div>
+            <div class="nav-links-right" id="navLinksRight">
+                <ul>
+                    <li><a href="#contact-form" onclick="showContactForm()"><h1>Let's talk!</h1></a></li>
+                </ul>
+            </div>
+
+            <div class="squid">
+                <img src=""alt="">
+            </div>
+            </nav>
+
+
+
+    <div class="jeki">
+        <img src="img/jeki potrait2.png" alt="jek" class="center">
+    </div>
+
+    <div class="text-box">
+        <h1>Hey people, I'm <span>Haikal Dzaky.</span> <br>I love wandering through anything that involve creativity. <span>Here,</span> you can check out what I have worked on.</h1>
+        <p></p>
+    </div>
+</header>
+</section>
+
+
+
+    <!-----------NEWS----------->
+    <section class="news" id="project">
+        <div class="newss">
+            <h2>Featured Work</h2>
+            <p></p>
+        </div>
+        <div class="row">
+            <div class="information">
+                <a href="https://store.celestymc.it/category/401929" target="_blank"><img src="img/celesty website.png" alt=""></a>
+                <div class="lapis">
+                    <h3>Celesty MC</h3>
+                    <h1>Minecraft Server</h1>
+                </div>
+        </div>
+    </section>
+
+    
+    <!--------------extras--------------->
+    <section class="headerextras"  id="extras">
+        <div class="extrass">
+            <h2>Extras</h2>
+            <p>An unfinished list of some of my <span>videos, writings, and musics</span><br>on a variety of topics. Check them out! </p>
+        </div>
+        
+        <div class="roww">
+            <div class="extrasadd1">
+                <a href="https://www.youtube.com/channel/UCIr7AcRAH4nLvpZS58OFtmQ" target="_blank"><img src="img/yt.png" alt=""></a>
+                <div class="layer">
+                    <h3>Youtube Channel</h3>
+                    <h1>I often capture my ideas on Youtube. </h1>
+                </div>
+            </div>
+            <div class="extrasadd2">
+                <a href="https://soundcloud.com/nara-mhd" target="_blank"><img src="img/sc (2).png" alt=""></a>
+                <div class="layer2">
+                    <h3>Music</h3>
+                    <h1>I just released my first album on Soundcloud.</h1>
+                </div>
+            </div>
+            <div class="extrasadd3">
+                <a href="https://archive.org/details/kti-full-paper-final/mode/2up" target="_blank"><img src="img/scientific.png" alt=""></a>
+                <div class="layer3">
+                    <h3>Scientific Paper</h3>
+                    <h1>We produced this paper for a high school competition.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- copyright------------------------ -->
+    <section class="copyright">
+        <div  class="name">
+            <h2>© 2024 Haikal Dzaky. All Rights Reserved.</h2>
+        </div>
+    </section>
+<!-- hamburger -->
+
+<!--------JavaScript for Toggle Menu------->
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+})
+
+function showContactForm() {
+  var contactForm = document.getElementById("contact-form");
+  contactForm.style.display = contactForm.style.display === "none" ? "block" : "none";
+}
+</script>
+
+
+
+
+
+
+<!-- formspreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+<div class="contact">
+
+    <form id="contact-form" method="POST" action="https://formspree.io/f/mzbnzqla">
+        <button class="close-button" onclick="showContactForm()">×</button>
+        <!-- add a style attribute to the h3 element -->
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="email" name="_replyto" placeholder="Enter Email" required>
+        <textarea name="message" placeholder="Enter Message" required></textarea>
+        <input class="send" type="submit" value="Send Message">
+    </form>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $('a[href^="#project"], a[href^="#extras"]').on('click', function(event) {
+        var target = $( $(this).attr('href') );
+        if( target.length ) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 400);
+        }
+      });
+    });
+
+
+
+    const image = document.getElementById("image");
+const images = [
+  "img/jeki potrait2.png",
+  "img/low4.jpg",
+  "img/WhatsApp Image 2024-01-22 at 19.42.16.png"
+];
+let currentImageIndex = 0;
+
+function changeImage() {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  image.src = images[currentImageIndex];
+}
+
+// Use setInterval() to call the changeImage() function every 5 seconds
+setInterval(changeImage, 5000);
+
+  </script>
+</body>
+</html>
+
+

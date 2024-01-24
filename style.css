@@ -473,7 +473,7 @@ nav.sticky{
         .nav-links ul li a{
             color: rgb(38,38,38);
             text-decoration: none;
-            font-size: 8px;
+            font-size: 12px;
             position: relative;
             z-index: 1;
             display: block;
